@@ -1,0 +1,24 @@
+{
+  "name": "@fsdash/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "14.2.10",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.12.7",
+    "react-simple-maps": "^3.0.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.471.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.20"
+  }
+}

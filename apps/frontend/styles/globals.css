@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card: 255 255 255;
+  --bg: 248 250 252;
+}
+
+html, body, #__next { height: 100%; }
+body { @apply bg-slate-50 text-slate-900; }
+
+.card { @apply bg-white rounded-2xl shadow-soft border border-slate-100; }
+.section-title { @apply text-lg font-semibold mb-3; }

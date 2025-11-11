@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-dashboard-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo for Full-Stack Dashboard (Excel upload -> metrics + charts + world map).",
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend \"npm --workspace=@fsdash/backend run dev\" \"npm --workspace=@fsdash/frontend run dev\"",
+    "install-all": "npm install --workspaces",
+    "build": "npm --workspace=@fsdash/frontend run build",
+    "start": "npm --workspace=@fsdash/backend run start & npm --workspace=@fsdash/frontend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "html-to-image": "^1.11.13",
+    "xlsx-populate": "^1.21.0"
+  }
+}
